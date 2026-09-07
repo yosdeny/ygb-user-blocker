@@ -1,10 +1,17 @@
 <?php
 /**
  * Plugin Name: YGB User Blocker
+ * Plugin URI: https://github.com/yosdeny
  * Description: Bloqueo indefinido de usuarios por ID o email. Impide acceso a login normal y WooCommerce, desconecta sesiones activas y redirige. Incluye mensajes personalizados.
  * Version: 1.0.0
  * Author: YGB
- * License: GPL-2.0+
+ * Author URI: https://github.com/yosdeny
+ * Requires at least: 7.0
+ * Tested up to: 7.1
+ * Requires PHP: 8.0
+ * Tested PHP: 8.2
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: ygb-user-blocker
  * Domain Path: /languages
  */
