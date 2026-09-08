@@ -93,8 +93,8 @@ class YGB_User_Blocker {
 		global $wpdb;
 		$table = $wpdb->prefix . self::TABLE_NAME;
 
-		$exists = $wpdb->get_var( $wpdb->prepare( 'SHOW TABLES LIKE %s', $table ) );
-		if ( $exists !== $table ) {
+		$exists = $wpdb->get_var( $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->prefix . self::TABLE_NAME ) );
+		if ( ! $exists ) {
 			return;
 		}
 
